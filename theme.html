@@ -95,26 +95,26 @@
 		
 			<div class="category">
 				<h1> Solar Energy </h1>			
-				<img style="height:100%;" class="squareImg" src="images/solar.jpg"/>		
+				<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>		
 			</div>
 			<div class="category">
 				<h1> Technology </h1>	
-				<img style="height:100%;" class="squareImg" src="images/sunset.jpg"/>
+				<img style="height:100%;" class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
 			</div>
 			<div class="category">
 				<h1> Latest News </h1>
-				<img style="height:100%;" class="squareImg" src="images/sunrise.jpg"/>
+				<img style="height:100%;" class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
 			</div>
 			<div class="category">
 				<h1> Elecyr </h1>
-				<img style="height:100%;" class="squareImg" src="images/grass-cropped.jpg"/>
+				<img style="height:100%;" class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
 			</div>
 	
 		</div>
 	{% else %}
 		<div class="fullscreenNav">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
-				<div class="category"><a href="/tag/design" class="{{ set_active('/tag/design') }}">
+				<div class="category">
 					<h1> Solar Energy </h1>
 					<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>			
 				</div>
