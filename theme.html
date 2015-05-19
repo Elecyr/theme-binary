@@ -88,6 +88,30 @@
                 </div>
             </div>
         </header>
+        
+        		
+	{% if is_tag %}
+		<div id="squaresContainer" class="miniNav">
+		
+			<div class="category">
+				<h1> Solar Energy </h1>			
+				<img style="height:100%;" class="squareImg" src="images/solar.jpg"/>		
+			</div>
+			<div class="category">
+				<h1> Technology </h1>	
+				<img style="height:100%;" class="squareImg" src="images/sunset.jpg"/>
+			</div>
+			<div class="category">
+				<h1> Latest News </h1>
+				<img style="height:100%;" class="squareImg" src="images/sunrise.jpg"/>
+			</div>
+			<div class="category">
+				<h1> Elecyr </h1>
+				<img style="height:100%;" class="squareImg" src="images/grass-cropped.jpg"/>
+			</div>
+	
+		</div>
+	{% else %}
 		<div class="fullscreenNav">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
 				<div class="category"><a href="/tag/design" class="{{ set_active('/tag/design') }}">
@@ -114,29 +138,7 @@
 				</div>
 			</a>
 		</div>
-<!--
-		<div id="squaresContainer" class="miniNav">
-		
-			<div class="category">
-				<h1> Solar Energy </h1>			
-				<img style="height:100%;" class="squareImg" src="images/solar.jpg"/>		
-			</div>
-			<div class="category">
-				<h1> Technology </h1>	
-				<img style="height:100%;" class="squareImg" src="images/sunset.jpg"/>
-			</div>
-			<div class="category">
-				<h1> Latest News </h1>
-				<img style="height:100%;" class="squareImg" src="images/sunrise.jpg"/>
-			</div>
-			<div class="category">
-				<h1> Elecyr </h1>
-				<img style="height:100%;" class="squareImg" src="images/grass-cropped.jpg"/>
-			</div>
-	
-		</div>
--->		
-	
+	{% endif %}
 	
 		<div id="mainBlogPage" class="container">
 		  <div class="row">
@@ -363,14 +365,7 @@
 				</div>
 			</div>
 		</div>
-		{% if not is_tag %}
-		<script>
-			$('.category').click(function(){
-				$( this ).parent().switchClass( "fullscreenNav", "miniNav", 500, "easeInOutQuad" );
 
-			});
-		</script>
-		{% endif %}
 		 {% endif %}
     {{ footer_meta }}
 	</body>
