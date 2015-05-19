@@ -5,6 +5,7 @@
 }
 
 .fullscreenNav{
+	max-height:100vh;
 	min-height:100vh;
 	min-width:100vw;
 	position:fixed;
@@ -21,10 +22,11 @@
 	box-sizing:border-box;
 	position:relative;	
 }
-		
+
 .fullscreenNav .category h1 {
 	margin: 0;
     position: absolute;
+	text-align:center;
     top: 50%;
     left: 50%;
     margin-right: -50%;
@@ -57,8 +59,8 @@
 .miniNav .category h1 {
 	margin: 0;
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 80%;
+    left:10%
     margin-right: -50%;
     transform: translate(0, -50%);
 	font-size:125%;
@@ -76,9 +78,57 @@
 }
 
 .categoryMini img{
-	border:2px solid #868275;
+	border:2px dotted #868275;
 }
 .squareImg{
 	width:100%;
 	overflow:hidden;
+}
+@media only screen and (max-width: 767px){
+
+.fullscreenNav{
+    margin-top:64px;
+	min-height:calc(100vh - 64px);
+	max-height:calc(100vh - 64px);
+	flex-direction:column;
+}		
+.fullscreenNav .category{
+	height:calc(25vh - 16px);
+	background-color:#5A843B;
+}
+
+.fullscreenNav .image1 {
+	order:0;
+}
+.fullscreenNav .image2 {
+	order:5;
+}
+.fullscreenNav .image3 {
+	order:2;
+}
+.fullscreenNav .image4 {
+	order:7;
+}
+.fullscreenNav .level1 {
+	order:4;
+}
+.fullscreenNav .level2 {
+	order:1;
+}.fullscreenNav .level3 {
+	order:6;
+}.fullscreenNav .level4 {
+	order:3;
+}
+	
+.fullscreenNav .category h1 {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    right: -150%;
+    margin-right: -50%;
+    transform: translate(0, -50%);
+	color:white;
+	transition: all .2s ease-in-out;
+	text-shadow:2px 2px black;
+		font-size:100%;
 }
