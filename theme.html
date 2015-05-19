@@ -44,7 +44,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		</script>
-		{% endif %}	
+		{% endif %}
 	</head>
 	<body> 
 
@@ -363,6 +363,11 @@
 				</div>
 			</div>
 		</div>
+		{% if is_tag %}
+		<script>
+			alert("is tag")
+		</script>
+		<% endif %}
 		 {% endif %}
     {{ footer_meta }}
 	</body>
