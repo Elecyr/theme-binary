@@ -92,24 +92,30 @@
         		
 	{% if is_tag %}
 		<div id="squaresContainer" class="miniNav">
-		
-			<div class="category">
-				<h1> Solar Energy </h1>			
-				<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>		
-			</div>
-			<div class="category">
-				<h1> Technology </h1>	
-				<img style="height:100%;" class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
-			</div>
-			<div class="category">
-				<h1> Latest News </h1>
-				<img style="height:100%;" class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
-			</div>
-			<div class="category">
-				<h1> Elecyr </h1>
-				<img style="height:100%;" class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
-			</div>
-	
+			<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">
+				<div class="category">
+					<h1> Solar Energy </h1>			
+					<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>		
+				</div>
+			</a>
+			<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">
+				<div class="category">
+					<h1> Technology </h1>	
+					<img style="height:100%;" class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
+				</div>
+			</a>
+			<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">
+				<div class="category">
+					<h1> Latest News </h1>
+					<img style="height:100%;" class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
+				</div>
+			</a>
+			<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">
+				<div class="category">
+					<h1> Elecyr </h1>
+					<img style="height:100%;" class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
+				</div>
+			</a>
 		</div>
 	{% else %}
 		<div class="fullscreenNav">
