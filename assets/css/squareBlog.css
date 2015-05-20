@@ -98,26 +98,34 @@
 }
 
 .fullscreenNav a .image1 {
-	order:0;
+	order:1;
+	-webkit-order: 1;
 }
 .fullscreenNav a .image2 {
-	order:5;
+	order:6;
+	-webkit-order: 6;
 }
 .fullscreenNav a .image3 {
-	order:2;
+	order:3;
+	-webkit-order: 3;
 }
 .fullscreenNav a .image4 {
-	order:7;
+	order:8;
+	-webkit-order: 8;
 }
 .fullscreenNav a .level1 {
-	order:4;
+	order:5;
+	-webkit-order: 5;
 }
 .fullscreenNav a .level2 {
-	order:1;
+	order:2;
+	-webkit-order: 2;
 }.fullscreenNav a .level3 {
-	order:6;
+	order:7;
+	-webkit-order: 7;
 }.fullscreenNav a .level4 {
-	order:3;
+	order:4;
+	-webkit-order: 4;
 }
 	
 .fullscreenNav .category h1 {
