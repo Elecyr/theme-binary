@@ -1,7 +1,13 @@
 $(window).load(function() {
 
-	$('.category').click(function(){
-		$( this ).parent().switchClass( "fullscreenNav", "miniNav", 500, "easeInOutQuad" );
+	$('.fullscreenNav .category').click(function(){
+		
+		$( this ).parent().switchClass( "fullscreenNav", "fullscreenSideNav", 500, "easeInOutQuad" );
+
+	});
+	$('.mobileNav .category').click(function(){
+		
+		$( this ).parent().switchClass( "mobileNav", "mobileSideNav", 500, "easeInOutQuad" );
 
 	});
 });	
