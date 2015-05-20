@@ -120,6 +120,26 @@
 				</a>
 			</div>
 		</div>
+<!-- Mobile Navigation version -->		
+		<div id="miniSquaresContainer" class="mobileNav mobileOnly">
+				<div class="category image">				
+					<img class="squareImg" src="images/solar.jpg"/>						
+				</div>
+						
+				<div class="category image">
+					<img class="squareImg" src="images/sunset.jpg"/>
+				</div>	
+		
+		
+				<div class="category image">
+					<img class="squareImg" src="images/sunrise.jpg"/>
+				</div>
+								
+		
+				<div class="category image">	
+					<img class="squareImg" src="images/grass-cropped.jpg"/>
+				</div>
+			</div>
 	{% else %}
 		<div class="fullscreenNav">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
@@ -164,6 +184,46 @@
 				</div>
 			
 		</div>
+		<!-- Mobile Navigation version -->	
+			<div id="miniSquaresContainer" class="mobileNav mobileOnly">
+				<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
+					<div class="category image">				
+						<img class="squareImg" src="images/solar.jpg"/>						
+					</div>
+				</a>
+				
+				<div class="category label">
+					<h1> Solar Energy </h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</div>
+				<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">
+					<div class="category image">
+						<img class="squareImg" src="images/sunset.jpg"/>
+					</div>
+				</a>
+				<div class="category label">
+					<h1> Technology </h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</div>
+				<div class="category label">
+					<h1> Latest News</h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</div>
+				<a href="/tag/news" class="{{ set_active('/tag/news') }}">
+					<div class="category image">
+						<img class="squareImg" src="images/sunrise.jpg"/>
+					</div>
+				</a>
+				<div class="category label">
+					<h1>Elecyr</h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</div>
+				<a href="/tag/elecyr" class="{{ set_active('/tag/elecyr') }}">
+					<div class="category image">	
+						<img class="squareImg" src="images/grass-cropped.jpg"/>
+					</div>
+				</a>
+			</div>
 	{% endif %}
 	
 		<div id="mainBlogPage" class="container">
