@@ -97,26 +97,26 @@
 	background-color:#5A843B;
 }
 
-.fullscreenNav .image1 {
+.fullscreenNav a .image1 {
 	order:0;
 }
-.fullscreenNav .image2 {
+.fullscreenNav a .image2 {
 	order:5;
 }
-.fullscreenNav .image3 {
+.fullscreenNav a .image3 {
 	order:2;
 }
-.fullscreenNav .image4 {
+.fullscreenNav a .image4 {
 	order:7;
 }
-.fullscreenNav .level1 {
+.fullscreenNav a .level1 {
 	order:4;
 }
-.fullscreenNav .level2 {
+.fullscreenNav a .level2 {
 	order:1;
-}.fullscreenNav .level3 {
+}.fullscreenNav a .level3 {
 	order:6;
-}.fullscreenNav .level4 {
+}.fullscreenNav a .level4 {
 	order:3;
 }
 	
