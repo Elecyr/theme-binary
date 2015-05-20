@@ -93,7 +93,7 @@
         		
 	{% if is_tag %}
 		<div class="container" >
-			<div id="squaresContainer" class="fullscreenSideNav col-md-2">
+			<div id="squaresContainer" class="fullscreenSideNav desktopOnly col-md-2">
 				<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
 					<div class="category">
 						<h1> Solar Energy </h1>			
@@ -141,7 +141,7 @@
 				</div>
 			</div>
 	{% else %}
-		<div class="fullscreenNav">
+		<div class="fullscreenNav desktopOnly">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
 				<div class="category">
 					<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>
