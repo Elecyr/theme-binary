@@ -55,7 +55,6 @@
 
     {% else %}
 
-{% set activeImage = testing %}
 	
 	<div id="main">
         <div id="head"></div>
@@ -107,7 +106,7 @@
 	{% if is_tag %}
 		<div class="container" >
 			<div id="squaresContainer" class="fullscreenSideNav desktopOnly">
-				<a href="/tag/solar" class="{{ set_active('/tag/solar') }} {% set_activeImage = assets('images/solar.jpg') %}">
+				<a href="/tag/solar" class="{{ set_active('/tag/solar') }} %}">
 					<div class="category">
 						<h1> Solar Energy </h1>			
 						<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>		
@@ -135,7 +134,7 @@
 		</div>
 <!-- Mobile Navigation version -->		
 		<div id="miniSquaresContainer" class="mobileSideNav mobileOnly">
-			<a href="/tag/solar" onclick="testfunction(this)" class="{{ set_active('/tag/solar') }}">
+			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
 				<div id="image1" class="category image">
 					<h3> Solar Energy </h3>				
 					<img class="squareImg" src="{{ assets('images/solar.jpg') }}"/>						
