@@ -33,6 +33,14 @@
 
 		<script src="{{ assets('js/squareBlog.js') }}" type="text/javascript"></script>
 		<script src="{{ assets('js/action.js') }}" type="text/javascript"></script>
+		
+		<script>
+			i=1;
+			document.getElementById("miniSquaresContainer").addEventListener("click", function(){
+			i = i + i;
+			alert("this is i" + i)
+			})
+		</script>
 
 		{% if site.analytics %}
 		<script>
@@ -45,13 +53,7 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		</script>
-		<script>
-			i=1;
-			document.getElementById("miniSquaresContainer").addEventListener("click", function(){
-			i = i + i;
-			alert("this is i" + i)
-			})
-		</script>
+	
 		{% endif %}
 	</head>
 	<body> 
