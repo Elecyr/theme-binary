@@ -278,4 +278,44 @@ Mobile Navigation Sidebar
 	opacity:0;
 }
 
+
+/************************************************
+Mobile Sidebar Navigation
+*************************************/
+#toggleSide + label{
+	position:fixed;
+	margin-top:64px;
+	top:0;
+	left:0;
+	height: 50px;
+	width:50px;
+	z-index:202;
+}	
+#toggleSide:checked ~ #miniSquaresContainer {
+	left:0;
 }
+#sideNav{
+	margin-top:64px;
+	position:fixed;
+	top:0;
+	z-index:201;
+	
+}
+#topic{
+animation-name: example;
+animation-duration: 4s;
+}
+.mobileNav .label-two h1{
+	animation-name: example1;
+	animation-duration: 4s;
+}
+@keyframes example {
+    from {stroke: red;}
+    to {stroke: yellow;}
+}
+@keyframes example1 {
+	from{left:50%; }
+	to{left:2%; }
+ }
+    	
+   }
