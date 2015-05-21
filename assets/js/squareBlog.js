@@ -7,6 +7,7 @@ $(window).load(function() {
 	});
 	$('.mobileNav div.category img').click(function(){
 		selectedImg = $( this ).attr("src");
+		alert(selectedImg)
 		$('#toggleImage').attr("src",selectedImg);
 	});
 	$('.mobileNav .category').click(function(){
