@@ -1,6 +1,6 @@
 $(window).load(function() {
 	
-	test
+	var test;
 
 	testfunction(caller){
 		alert(caller)
