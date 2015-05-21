@@ -1,13 +1,5 @@
 $(window).load(function() {
 	
-	var test;
-
-	function testfunction(caller){
-		alert(caller)
-		test = caller;
-		return true;
-	}
-
 	$('.fullscreenNav .category').click(function(){
 		
 		$( this ).parent().switchClass( "fullscreenNav", "fullscreenSideNav", 500, "easeInOutQuad" );
@@ -17,7 +9,7 @@ $(window).load(function() {
 		selectedImg = $( this ).attr("src");
 		alert(selectedImg)
 		test = selectedImg;
-		$('#toggleImage').attr("src",selectedImg);
+		$('#toggleImage').attr("src", "puppytest");
 	});
 	$('.mobileNav .category').click(function(){
 		
