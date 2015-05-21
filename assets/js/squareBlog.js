@@ -11,9 +11,10 @@ $(window).load(function() {
 		test = selectedImg;
 		$('#toggleImage').attr("src", "puppytest");
 	});
-	$('.mobileNav .category').click(function(){
-		
+	$('.mobileNav .category').click(function(e){
+		e.stop.propagation();
 		$( this ).parent().switchClass( "mobileNav", "mobileSideNav", 500, "easeInOutQuad" );
+		
 
 	});
 });	
