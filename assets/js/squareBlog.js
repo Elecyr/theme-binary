@@ -7,7 +7,7 @@ $(window).load(function() {
 	});
 	$('.mobileNav a div.category img').click(function(){
 		selectedImg = $( this ).attr("src");
-		alert(selectedImg)
+
 		test = selectedImg;
 		$('#toggleImage').attr("src", "puppytest");
 	});
