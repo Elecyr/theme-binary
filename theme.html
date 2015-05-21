@@ -36,10 +36,10 @@
 		
 		<script>
 			i=1;
-			document.getElementById("miniSquaresContainer").addEventListener("click", function(){
-			i = i + i;
-			alert("this is i" + i)
-			})
+			function increment(){
+				i++;
+				alert(i)
+			}
 		</script>
 
 		{% if site.analytics %}
@@ -143,7 +143,7 @@
 		</div>
 <!-- Mobile Navigation version -->		
 		<div id="miniSquaresContainer" class="mobileSideNav mobileOnly">
-			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
+			<a href="/tag/solar" onclick="increment();" class="{{ set_active('/tag/solar') }}">
 				<div id="image1" class="category image">
 					<h3> Solar Energy </h3>				
 					<img class="squareImg" src="{{ assets('images/solarSm.gif') }}"/>						
