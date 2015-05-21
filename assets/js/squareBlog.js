@@ -1,4 +1,12 @@
 $(window).load(function() {
+	
+	test
+
+	testfunction(caller){
+		alert(caller)
+		test = caller;
+		return true;
+	}
 
 	$('.fullscreenNav .category').click(function(){
 		
