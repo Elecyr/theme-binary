@@ -2,7 +2,7 @@ $(window).load(function() {
 	
 	var test;
 
-	testfunction(caller){
+	function testfunction(caller){
 		alert(caller)
 		test = caller;
 		return true;
