@@ -1572,7 +1572,7 @@ ul.blogBulleted li {
 	display:inline-block;
 	width:30%;
 }
-post-content p{
+.post-content p{
 	color: #062f00;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
