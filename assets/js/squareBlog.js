@@ -5,7 +5,7 @@ $(window).load(function() {
 		$( this ).parent().switchClass( "fullscreenNav", "fullscreenSideNav", 500, "easeInOutQuad" );
 
 	});
-	$('.mobileNav div.category img').click(function(){
+	$('.mobileNav a div.category img').click(function(){
 		selectedImg = $( this ).attr("src");
 		alert(selectedImg)
 		$('#toggleImage').attr("src",selectedImg);
