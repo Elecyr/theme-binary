@@ -45,6 +45,13 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		</script>
+		<script>
+			i=1;
+			document.getElementById("miniSquaresContainer").addEventListener("click", function(){
+			i = i + i;
+			alert("this is i" + i)
+			})
+		</script>
 		{% endif %}
 	</head>
 	<body> 
