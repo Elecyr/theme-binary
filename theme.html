@@ -90,6 +90,18 @@
             </div>
         </header>
         
+        <!-- Button to toggle side navigation menu on mobile  devices -->
+	    <input type="checkbox" class="hide" id="toggleSide">
+		<label class="corner" for="toggleSide">
+			<img class="clip-svg" src="images/solar.jpg" alt="Harry Potter">
+		</label>
+		<svg width="0" height="0">
+		  <defs>
+			<clipPath id="myClip">			
+			  <polygon points="0,0 50,50 0,100" />
+			</clipPath>
+		  </defs>
+		</svg>
         		
 	{% if is_tag %}
 		<div class="container" >
@@ -122,24 +134,38 @@
 		</div>
 <!-- Mobile Navigation version -->		
 		<div id="miniSquaresContainer" class="mobileSideNav mobileOnly">
-				<div class="category image">				
-					<img class="squareImg" src="{{ assets('images/solar.jpg') }}"/>						
-				</div>
-						
-				<div class="category image">
-					<img class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
-				</div>	
-		
-		
-				<div class="category image">
-					<img class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
-				</div>
-								
-		
-				<div class="category image">	
-					<img class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
-				</div>
+			<div id="image1" class="category image">				
+				<img class="squareImg" src="{{ assets('images/solar.jpg') }}"/>						
 			</div>
+					
+			<div id="image2" class="category image">
+				<img class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
+			</div>	
+
+			<div id="image3" class="category image">
+				<img class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
+			</div>
+						
+			<div id="image4" class="category image">	
+				<img class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
+			</div>
+			<label for="toggleSide" class="category label label-one">
+					<h1> Solar Energy </h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</label>
+				<label for="toggleSide" class="category label label-two">
+					<h1> Technology </h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</label>
+				<label for="toggleSide" class="category label label-three">
+					<h1> Latest News</h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+				</label>			
+				<label for="toggleSide" class="category label label-four">
+					<h1>Elecyr</h1>
+					<img class="squareImg" src="images/leaf.jpg"/>
+			</label>
+		</div>
 	{% else %}
 		<div class="fullscreenNav desktopOnly">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
