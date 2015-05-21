@@ -301,7 +301,7 @@ Mobile Sidebar Navigation
 	z-index:201;
 	
 }
-#topic{
+/*#topic{
 animation-name: example;
 animation-duration: 4s;
 }
@@ -317,5 +317,5 @@ animation-duration: 4s;
 	from{left:50%; }
 	to{left:2%; }
  }
-    	
+  */  	
    }
