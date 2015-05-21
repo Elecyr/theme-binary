@@ -93,7 +93,7 @@
         <!-- Button to toggle side navigation menu on mobile  devices -->
 	    <input type="checkbox" class="hide mobileOnly" id="toggleSide">
 		<label class="corner mobileOnly" for="toggleSide">
-			<img id="toggleImage" class="clip-svg" src="" alt="Side Navigation Toggle">
+			<img id="toggleImage" class="clip-svg" src="{{ activeImage }}" alt="Side Navigation Toggle">
 		</label>
 		<svg width="0" height="0">
 		  <defs>
@@ -106,7 +106,7 @@
 	{% if is_tag %}
 		<div class="container" >
 			<div id="squaresContainer" class="fullscreenSideNav desktopOnly">
-				<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
+				<a href="/tag/solar" class="{{ set_active('/tag/solar') }} {% set activeImage = assets('images/solar.jpg') %}">
 					<div class="category">
 						<h1> Solar Energy </h1>			
 						<img style="height:100%;" class="squareImg" src="{{ assets('images/solar.jpg') }}"/>		
