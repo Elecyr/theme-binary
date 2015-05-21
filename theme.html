@@ -93,7 +93,7 @@
         <!-- Button to toggle side navigation menu on mobile  devices -->
 	    <input type="checkbox" class="hide" id="toggleSide">
 		<label class="corner" for="toggleSide">
-			<img class="clip-svg" src="images/solar.jpg" alt="Harry Potter">
+			<img class="clip-svg" src="images/solar.jpg" alt="Side Navigation Toggle">
 		</label>
 		<svg width="0" height="0">
 		  <defs>
@@ -134,40 +134,45 @@
 		</div>
 <!-- Mobile Navigation version -->		
 		<div id="miniSquaresContainer" class="mobileSideNav mobileOnly">
-			<div id="image1" class="category image">
-				<h3> Solar Energy </h3>				
-				<img class="squareImg" src="{{ assets('images/solar.jpg') }}"/>						
-			</div>
-					
-			<div id="image2" class="category image">
-				<h3> Technology </h3>
-				<img class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
-			</div>	
-
-			<div id="image3" class="category image">
-				<h3> Latest News </h3>
-				<img class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
-			</div>
-						
-			<div id="image4" class="category image">
-				<h3> Elecyr </h3>	
-				<img class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
-			</div>
+			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
+				<div id="image1" class="category image">
+					<h3> Solar Energy </h3>				
+					<img class="squareImg" src="{{ assets('images/solar.jpg') }}"/>						
+				</div>
+			</a>
+			<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">		
+				<div id="image2" class="category image">
+					<h3> Technology </h3>
+					<img class="squareImg" src="{{ assets('images/sunset.jpg') }}"/>
+				</div>
+			</a>
+			<a href="/tag/news" class="{{ set_active('/tag/news') }}">
+				<div id="image3" class="category image">
+					<h3> Latest News </h3>
+					<img class="squareImg" src="{{ assets('images/sunrise.jpg') }}"/>
+				</div>
+			</a>
+			<a href="/tag/elecyr" class="{{ set_active('/tag/elecyr') }}">			
+				<div id="image4" class="category image">
+					<h3> Elecyr </h3>	
+					<img class="squareImg" src="{{ assets('images/woman.jpg') }}"/>
+				</div>
+			</a>
 			<label for="toggleSide" class="category label label-one">
-					<h1> Solar Energy </h1>
-					<img class="squareImg" src="images/leaf.jpg"/>
-				</label>
-				<label for="toggleSide" class="category label label-two">
-					<h1> Technology </h1>
-					<img class="squareImg" src="images/leaf.jpg"/>
-				</label>
-				<label for="toggleSide" class="category label label-three">
-					<h1> Latest News</h1>
-					<img class="squareImg" src="images/leaf.jpg"/>
-				</label>			
-				<label for="toggleSide" class="category label label-four">
-					<h1>Elecyr</h1>
-					<img class="squareImg" src="images/leaf.jpg"/>
+				<h1> Solar Energy </h1>
+				<img class="squareImg" src="images/leaf.jpg"/>
+			</label>
+			<label for="toggleSide" class="category label label-two">
+				<h1> Technology </h1>
+				<img class="squareImg" src="images/leaf.jpg"/>
+			</label>
+			<label for="toggleSide" class="category label label-three">
+				<h1> Latest News</h1>
+				<img class="squareImg" src="images/leaf.jpg"/>
+			</label>			
+			<label for="toggleSide" class="category label label-four">
+				<h1>Elecyr</h1>
+				<img class="squareImg" src="images/leaf.jpg"/>
 			</label>
 		</div>
 	{% else %}
