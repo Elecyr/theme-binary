@@ -320,8 +320,8 @@
 						</div>
 					  </div>
 					</header>
-					<div class="post-body">
-					  <div class="post-content pull-left">
+					<div class="post-body col-sm-12">
+					  <div class="post-content pull-left col-sm-6">
 						<div data-type-cleanup="true">
 						  {{ post.content }}
 						</div>
@@ -333,7 +333,7 @@
 					  {% if post.photos %}
 						  {% for photo in post.photos %}
 						  {% if loop.index == 1 %}
-						  <div class="post-image pull-right ">
+						  <div class="post-image pull-right col-sm-6 ">
 							{% if post.type == 'link' %}
 							<a href="{{ post.url }}" target="_blank">
 							{% else %}
