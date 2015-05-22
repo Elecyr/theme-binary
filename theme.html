@@ -181,8 +181,7 @@
 		
 			</label>
 		</div>
-
-	{% elif is_home %}
+	{% elif not is_tag and not posts %}
 		<div class="fullscreenNav desktopOnly">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
 				<div class="category">
@@ -266,8 +265,7 @@
 					</div>
 				</a>
 			</div>
-
-	{% else %}
+	{% endif %}
 	
 		<div id="mainBlogPage" class="container">
 		  <div class="row">
