@@ -6,6 +6,9 @@
 	height:100%;
 	overflow:hidden;
 }
+table, th, td {
+	border: none !important;
+}
 @media (min-width:768px) {
 /**********************************************
 
