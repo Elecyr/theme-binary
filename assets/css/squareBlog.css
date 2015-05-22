@@ -38,6 +38,9 @@ Fullscreen Navigation
 	z-index:100;
 	top:0;
 }
+.fullscreenNav:hover ~ .navbar-fixed-top{
+	opacity:.2;
+}
 .fullscreenNav .category{
 	height:50vh;
 	width:50vw;
