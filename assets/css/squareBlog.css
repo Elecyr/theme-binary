@@ -142,7 +142,6 @@ Mobile Navigation
 }	
 
 .mobileNav .category{
-	border:1px solid green;
 	width:50vw;
 	height:calc(25vh - 16px);
 	box-sizing:border-box;
