@@ -148,7 +148,7 @@ Mobile Navigation
 	position:relative;	
 	background-color:#5A843B;
 }
-.mobileNav .label img.squareImg{
+.mobileNav a .label img.squareImg{
 	opacity: 0.4;
     	filter: alpha(opacity=40);
 }
