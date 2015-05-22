@@ -182,7 +182,7 @@ Mobile Navigation
 	order: 3;
 }
 .mobileNav a .imgLabel img.squareImg{
-	opacity: 0.4;
+	opacity: 0.7;
     	filter: alpha(opacity=40);
 }
 .mobileNav a .category h1 {
