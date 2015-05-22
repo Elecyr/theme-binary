@@ -181,7 +181,7 @@ Mobile Navigation
 	-webkit-order: 3;
 	order: 3;
 }
-.mobileNav a .label img.squareImg{
+.mobileNav a .imgLabel img.squareImg{
 	opacity: 0.4;
     	filter: alpha(opacity=40);
 }
