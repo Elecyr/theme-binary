@@ -84,30 +84,30 @@
                 </div>
             </div>
         </header>
-        
-     <!--<label for="toggleSide" class="button corner">Toggle Side</label> -->
-	<input type="checkbox" class="hide mobileOnly" id="toggleSide">	
-	<label class="mobileOnly" for="toggleSide">
-		<svg id="sideNav" width="500" height="200" viewbox="0 0 500 200">
-			<circle id="topic" cx="15" cy="25" r="5" stroke="green" stroke-opacity=".5" stroke-width="4" fill-opacity="0";/>
-			<circle class="topic" cx="15" cy="25" r="10"  stroke="green"; stroke-width="2" fill-opacity="0"; />
-			<circle cx="15" cy="55" r="5" stroke="green" stroke-opacity=".5" stroke-width="4" fill-opacity="0"; />
-			<circle cx="15" cy="55" r="10"  stroke="green"; stroke-width="2" fill-opacity="0"; />
-			<circle cx="15" cy="85" r="5" stroke="green" stroke-opacity=".5" stroke-width="4" fill-opacity="0"; />
-			<circle cx="15" cy="85" r="10"  stroke="green"; stroke-width="2" fill-opacity="0"; />
-			<polygon points="0 0 33 0 33 88 18 105 0 105 0 0" fill="green" fill-opacity=".2"></polygon>	
-			
-			<animate 
-				xlink:href="#topic"
-				attributeName="cx"
-				from="15"
-				to="0" 
-				dur="1.5s"
-				begin="2s"
-				values="15; 340; 390; 410; 420; 425; 0"
-				keyTimes="0; 0.59; 0.69; 0.74; 0.79; .84; 1"/>
-		</svg>
-	</label>
+        <div id="blogNav" class="mobileOnly">
+		<a id="link1" href="#/tag/solar" class="{{ set_active('/tag/solar') }}">		
+			<div class="topic">
+				<p> Solar </p>
+			</div>
+		</a>
+		<a id="link2" href="#/tag/technology" class="{{ set_active('/tag/technology') }}">	
+			<div class="topic">
+				<p> Technology </p>
+			</div>
+		</a>
+			<a id="link3" href="#/tag/Latest News" class="{{ set_active('/tag/Latest News') }}">
+			<div class="topic">
+				<p> News </p>
+			</div>
+		</a>
+		<a id="link4" href="#/tag/Elecyr" class="{{ set_active('/tag/Elecyr') }}">
+			<div class="topic">
+				<p> Elecyr </p>
+			</div>
+		</a>
+				
+	</div>
+
         		
 	{% if is_tag %}
 		<div class="container" >
