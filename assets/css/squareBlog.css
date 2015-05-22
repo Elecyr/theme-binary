@@ -87,8 +87,8 @@ Fullscreen Side Navigation
 .fullscreenSideNav .category h1 {
 	margin: 0;
     position: absolute;
-    top: 80%;
-    left:10%
+    top: 60%;
+    left:40%;
     margin-right: -50%;
     transform: translate(0, -50%);
 	font-size:125%;
