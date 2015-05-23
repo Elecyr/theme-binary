@@ -2711,9 +2711,6 @@ body {
   padding: 30px;
   padding: 1.875rem;
   background-color: #ffffff;
-  border-bottom: solid #d7d7d7;
-  border-bottom-width: 2px;
-  border-bottom-width: 0.125rem;
 }
 .post-single {
   margin: 0 0 10px;
