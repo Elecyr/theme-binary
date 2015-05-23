@@ -90,19 +90,16 @@ Fullscreen Side Navigation
 	min-width:73%;
 	max-width:73%;
 	text-align: right;
-
 	list-style-type: none;
-    right:10%;
-    margin: 0px;
+	right:10%;
+    	margin: 0px;
 	margin-right: 5%;
-
 	list-style-position:inside;
 }
 #fullscreenSideNav ul li{
 	background-position: 100% 1em;
-    background-repeat: no-repeat;
-    background-position: 100% center;
-	background-image:contain;
+    	background-repeat: no-repeat;
+	background-position: 100% center;
 	font-size:1em;
 	font-family: sans-serif;
 	padding: 10% 30% 10% 0;
