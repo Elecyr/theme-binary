@@ -13,6 +13,13 @@ post-content img{
 	float:right !important;
 	padding-left: .5em;
 }
+#test ~ #header div.gray-navbar{
+	opacity:0 !important;
+}
+
+.fullscreenNav:hover ~ #header div.gray-navbar{
+	opacity:.2  !important;
+}
 @media (min-width:768px) {
 /**********************************************
 
@@ -42,9 +49,7 @@ Fullscreen Navigation
 	z-index:100;
 	top:0;
 }
-.fullscreenNav:hover ~ #header .gray-navbar{
-	opacity:.2  !important;
-}
+
 .fullscreenNav .category{
 	height:50vh;
 	width:50vw;
