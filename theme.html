@@ -225,10 +225,18 @@
 			<div class="col-sm-12">
 				<div id="navCol" class="col-sm-2">
 					<ul id="navList">
-						<li background="{{ assets('images/symbol.ico') }}"><h4> Solar Energy</h4> </li>
-						<li><h4> Technology </h4></li>
-						<li><h4> Latest News</h4> </li>
-						<li><h4> Elecyr </h4></li>
+						<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
+							<li background="{{ assets('images/symbol.ico') }}"><h4> Solar Energy</h4> </li>
+						</a>
+						<a href="/tag/technology" class="{{ set_active('/tag/technology') }}">
+							<li><h4> Technology </h4></li>
+						</a>
+						<a href="/tag/news" class="{{ set_active('/tag/news') }}">
+							<li><h4> Latest News</h4> </li>
+						</a>
+						<a href="/tag/elecyr" class="{{ set_active('/tag/elecyr') }}">
+							<li><h4> Elecyr </h4></li>
+						</a>
 					<ul>
 				</div>		
 			</div>
