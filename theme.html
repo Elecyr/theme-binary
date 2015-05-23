@@ -85,34 +85,6 @@
             </div>
         </header>
 
-        <div id="blogNav" class="mobileOnly">
-		<a id="link1" href="/tag/solar" class="{{ set_active('/tag/solar') }}">		
-			<div class="topic">
-				<p> Solar </p>
-			</div>
-		</a>
-		<a id="link2" href="/tag/technology" class="{{ set_active('/tag/technology') }}">	
-			<div class="topic">
-				<p> Technology </p>
-			</div>
-		</a>
-		<a id="link3" href="/tag/news" class="{{ set_active('/tag/news') }}">
-			<div class="topic">
-				<p> News </p>
-		</div>
-		</a>
-		<a id="link4" href="/tag/elecyr" class="{{ set_active('/tag/elecyr') }}">
-			<div class="topic">
-				<p> Elecyr </p>
-			</div>
-		</a>
-				
-	</div>
-
-        		
-
-		
-
 	{% if is_home %}
 		<div class="fullscreenNav desktopOnly">
 			<a href="/tag/solar" class="{{ set_active('/tag/solar') }}">
@@ -205,6 +177,30 @@
 				</a>
 			</div>
 	{% endif %}
+	{% else %}
+	<div id="blogNav" class="mobileOnly">
+		<a id="link1" href="/tag/solar" class="{{ set_active('/tag/solar') }}">		
+			<div class="topic">
+				<p> Solar </p>
+			</div>
+		</a>
+		<a id="link2" href="/tag/technology" class="{{ set_active('/tag/technology') }}">	
+			<div class="topic">
+				<p> Technology </p>
+			</div>
+		</a>
+		<a id="link3" href="/tag/news" class="{{ set_active('/tag/news') }}">
+			<div class="topic">
+				<p> News </p>
+		</div>
+		</a>
+		<a id="link4" href="/tag/elecyr" class="{{ set_active('/tag/elecyr') }}">
+			<div class="topic">
+				<p> Elecyr </p>
+			</div>
+		</a>
+				
+	</div>
 	
 		<div class="container-fluid">
 	<div class="row">
