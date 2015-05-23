@@ -100,7 +100,7 @@ Fullscreen Side Navigation
 }
 #fullscreenSideNav ul li{
 	background-position: 100% 1em;
-	background-image: url(symbol.ico);
+	background-image: url(src="http://cdn.themes.postach.io/debc4f7a17d5ed5f346b5020bf5b5731/assets/images/solar.jpg");
     background-repeat: no-repeat;
     background-position: 100% center;
 	background-image:contain;
