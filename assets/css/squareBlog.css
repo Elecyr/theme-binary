@@ -38,7 +38,7 @@ Fullscreen Navigation
 	z-index:100;
 	top:0;
 }
-.fullscreenNav:hover ~ .gray-navbar{
+.fullscreenNav:hover ~ #header .gray-navbar{
 	opacity:.2;
 }
 .fullscreenNav .category{
