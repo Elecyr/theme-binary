@@ -280,7 +280,7 @@
 					</header>
 					<div class="post-body col-sm-12">
 					  <div class="post-content pull-left col-sm-6">
-						<div data-type-cleanup="true">
+						<div style="overflow:wrap;" data-type-cleanup="true">
 						  {{ post.content }}
 						</div>
 						{% if post.type == 'link' or post.type == 'webclip' %}
@@ -291,7 +291,7 @@
 					  {% if post.photos %}
 						  {% for photo in post.photos %}
 						  {% if loop.index == 1 %}
-						  <div class="post-image pull-right col-sm-6 ">
+						  <div style="float:right;" class="post-image pull-right col-sm-6 ">
 							{% if post.type == 'link' %}
 							<a href="{{ post.url }}" target="_blank">
 							{% else %}
@@ -302,7 +302,9 @@
 							  <img style="float:right;" src="{{ photo.width_600 }}" class="img-responsive" />
 							  </p>
 							  {% else %}
-							  <img src="http://placehold.it/400x300/0eafff/ffffff.png" style="width:50%;" class="img-responsive" alt="" />
+							  <p>
+							  <img style="float:right;" src="http://placehold.it/400x300/0eafff/ffffff.png" style="width:50%;" class="img-responsive" alt="" />
+							  </p>
 							  {% endif %}
 							</a>
 						  </div>
