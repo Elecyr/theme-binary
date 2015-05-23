@@ -291,20 +291,20 @@
 					  {% if post.photos %}
 						  {% for photo in post.photos %}
 						  {% if loop.index == 1 %}
-						  <div style="float:right;" class="post-image pull-right col-sm-6 ">
+						  <div class="post-image pull-right col-sm-6 ">
 							{% if post.type == 'link' %}
 							<a href="{{ post.url }}" target="_blank">
 							{% else %}
 							<a href="{{ post.permalink }}">
 							{% endif %}
-							  {% if photo %}
-							  <p>
-							  <img style="float:right;" src="{{ photo.width_600 }}" class="img-responsive" />
-							  </p>
+							{% if photo %}
+							
+							  <img src="{{ photo.width_600 }}" class="img-responsive" />
+							 
 							  {% else %}
-							  <p>
-							  <img style="float:right;" src="http://placehold.it/400x300/0eafff/ffffff.png" style="width:50%;" class="img-responsive" alt="" />
-							  </p>
+						
+							  <img src="http://placehold.it/400x300/0eafff/ffffff.png" style="width:50%;" class="img-responsive" alt="" />
+							 
 							  {% endif %}
 							</a>
 						  </div>
