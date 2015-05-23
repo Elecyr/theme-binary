@@ -73,43 +73,43 @@ Fullscreen Navigation
 Fullscreen Side Navigation
 
 /***********************************************/
-.fullscreenSideNav{
+#navCol{
+	height:100vh;
+}
+
+#fullscreenSideNav{
    	position: fixed;
-	top:20%;
-	left:2%;
+	top:30%;
+	width:100vw;
 	z-index:200;
-	display:flex;
-	webkit-flex-direction: column;
-	flex-direction:column;
-	-webkit-flex-justify-content:space-between;
-	justify-content:space-between;
-}
-.fullscreenSideNav .category{
-	height:100px;
-	width:100px;
-	padding:12px !important;
-	position:relative;
-}
-.fullscreenSideNav .category h1 {
-	margin: 0;
-    position: absolute;
-    top: 60%;
-    left:40%;
-    margin-right: -50%;
-    transform: translate(0, -50%);
-	font-size:125%;
-	white-space:nowrap;
-	letter-spacing:4px;
-	color:white;
-	transition: all .2s ease-in-out;
-	text-shadow:2px 2px black;
 
 }
-.fullscreenSideNav .category:hover h1{
-	font-size:300%;
-	letter-spacing:4px;
-	opacity:.8;
+
+#fullscreenSideNav ul{
+	position:absolute;
+	min-width:73%;
+	max-width:73%;
+	text-align: right;
+
+	list-style-type: none;
+    right:10%;
+    margin: 0px;
+	margin-right: 5%;
+
+	list-style-position:inside;
 }
+#fullscreenSideNav ul li{
+	background-position: 100% 1em;
+	background-image: url(symbol.ico);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+	background-image:contain;
+	font-size:1em;
+	font-family: sans-serif;
+	padding: 10% 30% 10% 0;
+	direction:rtl;
+}
+
 
 .squareImg{
 	width:100%;
