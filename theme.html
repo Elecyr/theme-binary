@@ -19,9 +19,9 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	   
 	   	<link href="{{ assets('css/navBar.css') }}" rel="stylesheet" />
-	   	<link href="{{ assets('css/squareBlog.css') }}" rel="stylesheet" />
 		<link href="{{ assets('css/style.css') }}" rel="stylesheet" /> 
-		<link href="{{ assets('css/responsive.css') }}" rel="stylesheet" /> 
+		<link href="{{ assets('css/responsive.css') }}" rel="stylesheet" />
+		<link href="{{ assets('css/squareBlog.css') }}" rel="stylesheet" />
 		
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" /></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" /></script>
@@ -50,7 +50,9 @@
 
     {% else %}
 
-	
+	{% if is_home %}
+	div id="test"
+	{% else %}
 	<div id="main">
         <div id="head"></div>
 		
@@ -506,7 +508,7 @@
                 </div>
             </footer>
         </div>
-		 {% endif %}
+		 {% endif %} {% endif %}
     {{ footer_meta }}
   
 	</body>
