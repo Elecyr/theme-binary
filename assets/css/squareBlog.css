@@ -6,9 +6,7 @@
 	height:100%;
 	overflow:hidden;
 }
-table, th, td {
-	border: none !important;
-}
+
 post-content img{
 	float:right !important;
 	padding-left: .5em;
