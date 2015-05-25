@@ -98,7 +98,9 @@ Mobile Navigation
     .desktopOnly {
         display:none !important;
    }
-
+#fullscreenSideNav{
+	opacity:0;
+}
 #miniSquaresContainer *{
 	padding:0px;
 	margin:0px;
