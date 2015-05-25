@@ -7,7 +7,7 @@
 	overflow:hidden;
 }
 
-post-content img{
+.post-content img{
 	float:right !important;
 	padding-left: .5em;
 }
@@ -37,6 +37,7 @@ Fullscreen Navigation
 }
 .navDropdown li a{
 	color:white;
+	text-transform: capitalize;
 }
 
 /**********************************************
