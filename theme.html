@@ -215,7 +215,8 @@
 						  </h1>
 						</div>
 					  </div>
-					  <div class="site-content col-sm-12">
+					  <div class="col-sm-12"
+					  <div class="site-content">
 					  {% if is_home or is_tag %}
 						{% if is_tag %}
 						<h4 class="tag-header">Showing all posts tagged {{ tag }}:</h4>
@@ -238,7 +239,6 @@
 								  <p class="post-comment-count">
 									<a href="{{ post.permalink }}{% if site.disqus %}{% endif %}" class='dsq-comment-count comment-link commentslink'></a>
 								  </p>
-								  <p><a href="{{ post.permalink }}" class="post-permalink">Permalink</a></p>
 								</div>
 							  </div>
 							</header>
@@ -275,11 +275,6 @@
 								  {% endif %}
 								  {% endfor %}
 								  {% endif %}
-							{% if post.tags %}
-							  <div class="post-tags">
-								{{- post.tags|format_tags(humanize=True) -}}
-							  </div>
-							  {% endif %}
 							</div>
 						     </div>
 						  </article>
@@ -364,6 +359,7 @@
 						</div>
 					  {% endif %}
 					  </div>
+					</div>
 					  <div class="site-footer">
 						<p>All rights Reserved &copy; <a href="/">{{ site.name }}</a>.</p>
 						<br />
