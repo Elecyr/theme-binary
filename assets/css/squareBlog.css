@@ -1,8 +1,4 @@
-html, body {
-	font-family: sans-serif !important;
-	font-size:18px !important;
-	color: #062f00 !important;
-}
+
 #mainBlogPage{
 	margin-top:128px;
 }
@@ -16,7 +12,11 @@ html, body {
 	float:right !important;
 	padding-left: .5em;
 }
-
+.post-content{
+	font-size:30px;
+	font-family:sans-serif;
+	color:#062f00;
+}
 @media (min-width:768px) {
 /**********************************************
 
