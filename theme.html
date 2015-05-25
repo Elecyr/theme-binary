@@ -262,6 +262,11 @@
 								<span class="post-link-url"><i class="icon-share"></i> <a href="{{ post.url }}" target="_blank">{{ post.url }}</a></span>
 								{% endif %}
 							  </div>
+							  {% if post.tags %}
+                  <div class="post-tags">
+                    {{- post.tags|format_tags(humanize=True) -}}
+                  </div>
+                  {% endif %}
 							  
 							  {% if post.photos %}
 								  {% for photo in post.photos %}
