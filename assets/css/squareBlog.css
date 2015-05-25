@@ -39,7 +39,9 @@ Fullscreen Navigation
 	color:white;
 	text-transform: capitalize;
 }
-
+.navDropdown li p{
+	color:white;
+}
 /**********************************************
 
 Fullscreen Side Navigation
