@@ -1,7 +1,7 @@
 html, body {
-	font-family: sans-serif;
-	font-size:18px;
-	color: #062f00;
+	font-family: sans-serif !important;
+	font-size:18px !important;
+	color: #062f00 !important;
 }
 #mainBlogPage{
 	margin-top:128px;
