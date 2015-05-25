@@ -30,44 +30,17 @@ Fullscreen Navigation
 	padding:0px;
 	margin:0px;
 }
-
-.fullscreenNav{
-	max-height:100vh;
-	min-height:100vh;
-	min-width:100vw;
-	position:fixed;
-	display: -webkit-flex;
-	display:flex;
-	-webkit-flex-wrap:wrap;
-	box-sizing:border-box;
-	z-index:100;
-	top:0;
+.nav .open>a{
+	background-color:#7a7c7a !important;
 }
-
-.fullscreenNav .category{
-	height:50vh;
-	width:50vw;
-	box-sizing:border-box;
-	position:relative;	
-}
-
-.fullscreenNav .category h1 {
-	margin: 0;
-    position: absolute;
-	text-align:center;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-	color:white;
-	transition: all .2s ease-in-out;
-	text-shadow:2px 2px black;
-}
-.fullscreenNav .category:hover h1{
-	font-size:300%;
-	letter-spacing:4px;
+.navDropdown{
+	background-color:#7a7a7c;
 	opacity:.8;
 }
+.navDropdown li a{
+	color:white;
+}
+
 /**********************************************
 
 Fullscreen Side Navigation
