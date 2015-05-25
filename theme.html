@@ -74,27 +74,24 @@
                     <!--<Navigation>Menu </Navigation>-->
                     <nav id="navigation-menu" role="navigation" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a id="GoToHome" href="http://162.144.149.48">Home</a>
-                            </li>
-                            <li><a id="GoToApplications" href="http://162.144.149.48/applications">Applications</a>
-                            </li>
-							<li><a id="GoToCalculator" href="http://162.144.149.48/solarcalculator">Cost</a>
-                            </li>
-                            <li><a id="GoToContact" href="http://162.144.149.48/contact">Contact</a>
-                            </li>
-                        {% if is_tag %}
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Blog | {{ tag }} <span class="caret"> </a>
-				<ul class="dropdown-menu navDropdown">
-					{% for tag in site.tags %}
-					
-			  			<li><a href="/tag/{{ tag.name }}">{{ tag.name }}</a></li>
-			  	
-			  		{% endfor %}
-				</ul>
-			</li>
+				<li><a id="GoToHome" href="http://162.144.149.48">Home</a>
+				</li>
+				<li><a id="GoToApplications" href="http://162.144.149.48/applications">Applications</a>
+				</li>
+				<li><a id="GoToCalculator" href="http://162.144.149.48/solarcalculator">Cost</a>
+				</li>
+				<li><a id="GoToContact" href="http://162.144.149.48/contact">Contact</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Blog | {{ tag }} <span class="caret"> </a>
+					<ul class="dropdown-menu navDropdown">
+						{% for tag in site.tags %}
+				  			<li><a href="/tag/{{ tag.name }}">{{ tag.name }}</a></li>
+				  		{% endfor %}
+					</ul>
+				</li>
 			
-			{% endif %}
+	
                         </ul>
                     </nav>
                 </div>
