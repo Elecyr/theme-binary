@@ -42,6 +42,9 @@ Fullscreen Navigation
 .navDropdown li h4{
 	color:white;
 }
+.navDropdown li.divider{
+	color:white;
+}
 /**********************************************
 
 Fullscreen Side Navigation
