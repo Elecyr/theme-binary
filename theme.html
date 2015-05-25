@@ -85,7 +85,7 @@
                         {% if is_tag %}
 			<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Blog | {{ tag }} <span class="caret"> </a>
-				<ul class="dropdown-menu">
+				<ul class="dropdown-menu navDropdown">
 					{% for tag in site.tags %}
 					
 			  			<li><a href="/tag/{{ tag.name }}">{{ tag.name }}</a></li>
@@ -209,7 +209,9 @@
 					  <div class="site-header">
 						<div class="header-top">
 						  <h1 class="site-title">
-							<a href="/">{{ site.name }}</a>
+							<div class="avatar">
+							  	<img src="{{ site.avatar }}" alt="{{ site.author }}" />
+							</div>
 						  </h1>
 						</div>
 						<nav class="site-nav">
