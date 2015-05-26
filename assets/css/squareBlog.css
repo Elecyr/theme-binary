@@ -23,6 +23,10 @@ a{
 .post-metadata{
 	color:#7a7c7a;
 }
+.tagImage{
+	width:50%;
+	float:right;
+}
 @media (min-width:768px) {
 /**********************************************
 
