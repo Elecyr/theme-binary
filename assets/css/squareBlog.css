@@ -62,6 +62,7 @@ Fullscreen Navigation
 	color:white;
 }
 .navDropdown li.divider{
+	margin-top:0px;
 	color:white;
 }
 /**********************************
