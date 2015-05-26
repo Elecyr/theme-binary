@@ -142,6 +142,9 @@ Mobile Navigation
 .navDropdown li.divider{
 	color:white;
 }
+.navbar-collapse{
+	max-height:auto;
+}
 #fullscreenSideNav{
 	opacity:0;
 }
