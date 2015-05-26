@@ -2441,7 +2441,6 @@ a {
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
-  color: #b22130;
   text-decoration: none;
 }
 a:hover,
