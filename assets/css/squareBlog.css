@@ -116,7 +116,12 @@ Fullscreen Side Navigation
 	direction:rtl;
 }
 
+a.focus li h4{
+	color:#7a7c7a;
+	text-decoration:underline;
+}
 a.active li h4{
+	color:#7a7c7a;
 	text-decoration:underline;
 }
 
