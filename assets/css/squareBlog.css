@@ -123,6 +123,23 @@ Mobile Navigation
     .desktopOnly {
         display:none !important;
    }
+.nav .open>a{
+	background-color:#7a7c7a !important;
+}
+.navDropdown{
+	background-color:#7a7a7c;
+	opacity:.8;
+}
+.navDropdown li a{
+	color:white;
+	text-transform: capitalize;
+}
+.navDropdown li h4{
+	color:white;
+}
+.navDropdown li.divider{
+	color:white;
+}
 #fullscreenSideNav{
 	opacity:0;
 }
