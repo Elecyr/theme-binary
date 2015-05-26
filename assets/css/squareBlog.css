@@ -133,9 +133,11 @@ Mobile Navigation
 .navDropdown li a{
 	color:white;
 	text-transform: capitalize;
+	text-align:center;
 }
 .navDropdown li h4{
 	color:white;
+	text-align:center;
 }
 .navDropdown li.divider{
 	color:white;
