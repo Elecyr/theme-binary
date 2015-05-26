@@ -456,9 +456,9 @@
 	<script>
 	$(window).load(function() {
 		alert('called')
-		var x = document.getElementByclassName("post-content").getElementsByTagName("img");
+		var x = document.getElementByClassName("post-content").getElementsByTagName("img");
 		for(i=0; i<x.length; i++){
-			alert(x[i].width)
+			alert(x[i].style.width)
 		}
 		alert(x)	
 	})
