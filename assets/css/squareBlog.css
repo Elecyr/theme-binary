@@ -26,6 +26,7 @@ a{
 .tagImage{
 	width:50%;
 	float:right;
+	margin:3%;
 }
 @media (min-width:768px) {
 /**********************************************
