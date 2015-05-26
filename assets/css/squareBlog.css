@@ -14,6 +14,11 @@
 	font-family:sans-serif;
 	color:#062f00;
 }
+.post-content ul{
+	font-size:16px;
+	font-family:sans-serif;
+	color:#062f00;
+}
 .onTop{
 	z-index:201;
 }
