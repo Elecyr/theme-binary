@@ -1173,6 +1173,7 @@ a:focus {
 	background-color: #7a7c7a;
 	padding-top: 20px;
 	padding-bottom: 20px
+	z-index:201;
 }
 
 #footer p {
@@ -1222,7 +1223,7 @@ a:focus {
 /*	 Footer Icons Hover 
 /*------------------------------------------*/
 
-.ico-facebook:hover {color: #3b5998 !important;}
+.ico-facebook:hover {color: #3b5998;}
 .ico-twitter:hover {color: #00a9ed;}
 .ico-google-plus:hover {color: #cd1111;}
 .ico-linkedin:hover {color: #015886;}
