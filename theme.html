@@ -93,7 +93,7 @@
 						<li role="presentation" class="dropdown-header"><h4>Categories</h4></li>
 						<li role="presentation" class="divider"></li>
 						{% for tag in site.tags %}
-				  			<li><a href="/tag/{{ tag.name }}">{{ tag.name }}</a></li>
+				  			<li><a href="/tag/{{ tag.name }}" class="{{ set_active('/tag/{{ tag.name }}') }}">{{ tag.name }}</a></li>
 				  		{% endfor %}
 					</ul>
 				</li>
