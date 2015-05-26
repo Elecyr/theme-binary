@@ -32,6 +32,9 @@ a{
 Fullscreen Navigation
 
 /***********************************************/
+#mainBlogPage{
+	margin-top:128px;
+}
 .desktopOnly {
         display:flex !important;
 }
