@@ -455,11 +455,11 @@
     {{ footer_meta }}
 	<script>
 	$(window).load(function() {
-		var x = document.getElementByClass("post-content").getElementsByTagName("img").length;
+		var x = document.getElementByClass("post-content").getElementsByTagName("img");
 		for(i=0; i<x.length; i++){
 			alert(x[i].width)
 		}
-			
+		alert(x)	
 	})
 	</script>
 	</body>
