@@ -102,6 +102,9 @@ Fullscreen Side Navigation
 	padding: 10% 30% 10% 0;
 	direction:rtl;
 }
+a li h4{
+	text-decoration:none;
+}
 a.active li h4{
 	text-decoration:underline;
 }
