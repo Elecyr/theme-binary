@@ -1204,7 +1204,7 @@ a:focus {
 .foo_social {
     width: 40px;
     height: 40px;
-	color: #777;
+	color: #fff;
 	font-size: 18px;
     line-height: 40px;
 	text-align: center;
@@ -1222,7 +1222,7 @@ a:focus {
 /*	 Footer Icons Hover 
 /*------------------------------------------*/
 
-.ico-facebook:hover {color: #3b5998;}
+.ico-facebook:hover {color: #3b5998 !important;}
 .ico-twitter:hover {color: #00a9ed;}
 .ico-google-plus:hover {color: #cd1111;}
 .ico-linkedin:hover {color: #015886;}
