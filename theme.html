@@ -357,49 +357,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="sidebar">
-							<div class="widget widget-about">
-
-								<div class="widget-content">
-									<div class="avatar">
-									  <img src="{{ site.avatar }}" alt="{{ site.author }}" />
-									</div>
-									<ul class="social-links">
-										  {% if site.twitter %}
-										  <li>
-											<a href="{{ site.twitter }}" title="Twitter" target="_blank">
-											  <i class="icon-twitter"></i>
-											</a>
-										  </li>
-										  {% endif %}
-										  {% if site.facebook %}
-										  <li>
-											<a href="{{ site.facebook }}" title="Facebook" target="_blank">
-											  <i class="icon-facebook"></i>
-											</a>
-										  </li>
-										  {% endif %}
-										  {% if site.googleplus %}
-										  <li>
-											<a href="{{ site.googleplus }}?rel=author" title="Google+" target="_blank">
-											  <i class="icon-google-plus"></i>
-											</a>
-										  </li>
-										  {% endif %}
-										  {% if site.linkedin %}
-										  <li>
-											<a href="{{ site.linkedin }}" title="LinkedIn" target="_blank">
-											  <i class="icon-linkedin"></i>
-											</a>
-										  </li>
-										  {% endif %}
-										  <li>
-											<a href="{{ site.atom_url }}" title="RSS" target="_blank">
-											  <img src="{{ assets('images/21.png') }}" alt="rssIcon" />
-											</a>
-										  </li>
-									</ul>
-								</div>
-							</div>
+	
 						<div class="widget widget-latestposts">
 						  <h2 class="widget-title">Latest Posts</h2>
 						  <div class="widget-content popular-posts">
@@ -412,9 +370,13 @@
 							{% endfor %}
 							</ul>
 							{% endif %}
+							<a href="{{ site.atom_url }}" title="RSS" target="_blank">
+											  <img src="{{ assets('images/21.png') }}" alt="rssIcon" />
+											</a>
 						  </div>
 						</div>
-					  </div>
+											
+						  </div>
 					</div>
 				  </div>
 				</div>
