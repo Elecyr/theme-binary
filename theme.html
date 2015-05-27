@@ -455,18 +455,13 @@
     {{ footer_meta }}
 	<script>
 	$(window).load(function() {
-		alert("called")
 		var p1 = document.getElementsByClassName("post-content");
-	
 		var i;
 		for(i=0; i<p1.length; i++){
 			var c1 = p1[i].getElementsByTagName("img");
 			var pageWidth = p1[i].offsetWidth;
 			
 			for(j=0; j<c1.length; j++){
-				alert(c1[j].width + "step3")
-				
-				alert("page Width" + pageWidth)
 				var imageSize = (c1[j].width)/pageWidth;
 				if(imageSize>= .8){
 					c1[j].style.width = "100%";
