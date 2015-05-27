@@ -465,7 +465,9 @@
 			
 			for(j=0; j<c1.length; j++){
 				alert(c1[j].width + "step3")
-				var imageSize = (c1[j].width)/(p1[i].width);
+				pageWidth = p1[i].width();
+				alert("page Width" + pageWidth)
+				var imageSize = (c1[j].width)/pageWidth;
 				if(imageSize>= .6){
 					c1[j].style.width = "100%";
 				}
