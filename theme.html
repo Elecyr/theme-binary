@@ -385,7 +385,28 @@
 
 		</div>
 	        </div>
-	    		<div id="footer" class="col-sm-12">
+	    	
+		 {% endif %}
+
+    {{ footer_meta }}
+	<script>
+	$(window).load(function() {
+		var p1 = document.getElementsByClassName("post-content");
+		var i;
+		for(i=0; i<p1.length; i++){
+			var c1 = p1[i].getElementsByTagName("img");
+			var pageWidth = p1[i].offsetWidth;
+			
+			for(j=0; j<c1.length; j++){
+				var imageSize = (c1[j].width)/pageWidth;
+				if(imageSize>= .8){
+					c1[j].style.width = "100%";
+				}
+			}
+		}
+	})
+	</script>
+		<div id="footer" class="col-sm-12">
 	            <footer id="footer">
 	                <div class="container">
 	                    <!-- Footer Social Icons-->
@@ -412,25 +433,5 @@
 	            </footer>
 	            </div>
 	        </div>
-		 {% endif %}
-
-    {{ footer_meta }}
-	<script>
-	$(window).load(function() {
-		var p1 = document.getElementsByClassName("post-content");
-		var i;
-		for(i=0; i<p1.length; i++){
-			var c1 = p1[i].getElementsByTagName("img");
-			var pageWidth = p1[i].offsetWidth;
-			
-			for(j=0; j<c1.length; j++){
-				var imageSize = (c1[j].width)/pageWidth;
-				if(imageSize>= .8){
-					c1[j].style.width = "100%";
-				}
-			}
-		}
-	})
-	</script>
 	</body>
 </html>
