@@ -455,12 +455,19 @@
     {{ footer_meta }}
 	<script>
 	$(window).load(function() {
-	
-		var x = document.getElementByClassName("post-content").getElementsByTagName("img");
-		for(i=0; i<x.length; i++){
-			alert(x[i].style.width)
+		
+		var p1 = document.getElementsByClassName("post-content");
+		var i;
+		for(i=0; i<p1.length; i++){
+			var c1 = p1[i].getElementsByTagName("img");
+			var j;
+			for(j=0; j<c1.length; j++){
+				var imageSize = c1[j].width/p1[i].width;
+				if(imageSize>= .75){
+					c1[j].style.width = 100%;
+				}
+			}
 		}
-		alert(x)	
 	})
 	</script>
 	</body>
