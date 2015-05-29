@@ -272,11 +272,8 @@
 							  </div>
 						   	</div>
 						  </article>
-						  <div style="text-align:center;">
-							<svg height="10" width="50%" style="margin-left:6em; margin-right:6em; overflow:hidden; text-align:center;">
-							  <line x1="0" y1="0" x2="400" y2="0" style="stroke:#7a7c7a;stroke-width:6"></line>
-							</svg>
-						  </div>
+						
+
 						{% endfor %}
 						</section>
 						{% if site.disqus %}
@@ -371,6 +368,11 @@
 							{% for post in posts_recent %}
 							{% if loop.index <= 5 and loop.index > 0 %}
 							  <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+							  <div style="text-align:center;">
+							  <svg height="10" width="50%" style="margin-left:6em; margin-right:6em; overflow:hidden; text-align:center;">
+							  	<line x1="0" y1="0" x2="400" y2="0" style="stroke:#7a7c7a;stroke-width:6"></line>
+							</svg>
+						  </div>
 							{% endif %}
 							{% endfor %}
 							</ul>
